@@ -20,6 +20,7 @@ class Raja:
         self.driver.maximize_window()
         self.driver.get(self.url)
         sleep(5)
+        #steps to signin 
         self.driver.find_element(by=By.NAME, value='username').send_keys(self.username)
         self.driver.find_element(by=By.NAME, value='password').send_keys(self.password)
         self.driver.find_element(by=By.XPATH,
@@ -30,8 +31,8 @@ class Raja:
         self.driver.find_element(by=By.XPATH, value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a').click()
         sleep(5)
 
-        # It will Check the Menu Visisblity
-
+        # steps to Check the Menu Visisblity
+        # Check the visibility and click on PIM
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a').click()
@@ -43,7 +44,7 @@ class Raja:
             print('PIM is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on Leave
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a').click()
@@ -52,7 +53,7 @@ class Raja:
             print('Leave is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on Time
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[4]/a').click()
@@ -61,7 +62,7 @@ class Raja:
             print('Time is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on Recruitment
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[5]/a').click()
@@ -70,7 +71,7 @@ class Raja:
             print('Recruitment is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on My Info
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[6]/a').click()
@@ -79,7 +80,7 @@ class Raja:
             print('My Info is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on Performance
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[7]/a/span').click()
@@ -88,7 +89,7 @@ class Raja:
             print('Performance is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on Dashboard
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[8]/a').click()
@@ -97,7 +98,7 @@ class Raja:
             print('Dashboard is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on Directory
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[9]/a').click()
@@ -106,7 +107,7 @@ class Raja:
             print('Directory is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and on Maintenance
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[10]/a')
@@ -115,7 +116,7 @@ class Raja:
             print('Maintenance is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on Claim
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[11]/a').click()
@@ -124,7 +125,7 @@ class Raja:
             print('Claim is Not Visible')
 
         sleep(2)
-
+        # Check the visibility and click on Buzz
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[12]/a').click()
