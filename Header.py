@@ -20,7 +20,7 @@ class Raja:
         self.driver.maximize_window()
         self.driver.get(self.url)
         sleep(5)
-        # it will login
+        #steps to signin 
         self.driver.find_element(by=By.NAME, value='username').send_keys(self.username)
         self.driver.find_element(by=By.NAME, value='password').send_keys(self.password)
         self.driver.find_element(by=By.XPATH,
@@ -30,8 +30,8 @@ class Raja:
         sleep(3)
         self.driver.find_element(by=By.XPATH, value="/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a").click()
         sleep(5)
-
-        # It will check the Visisblity of Admin page
+        # steps to Check the Admin Visibility
+        #check the Visibility of User Management
         try:
             self.driver.find_element(by=By.XPATH, value="/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[1]")
             print("User management is visible")
@@ -41,36 +41,47 @@ class Raja:
         except NoSuchElementException:
             print("User management is not visible")
 
+        #check the Visibility of job
         try:
             self.driver.find_element(by=By.XPATH, value="/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]")
             print("Job is visible")
         except NoSuchElementException:
             print("Job is not visible")
-
+            
+        #check the Visibility of Organization
+        
         try:
             self.driver.find_element(by=By.XPATH, value="/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[3]")
             print("Organization is visible")
         except NoSuchElementException:
             print("Organization is not visible")
-
+            
+        #check the Visibility of qulification
+        
         try:
             self.driver.find_element(by=By.XPATH, value="/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[4]")
             print("Qualifications is visible")
         except NoSuchElementException:
             print("Qualifications is not visible")
 
+        #check the Visibility of Nationalities
+        
         try:
             self.driver.find_element(by=By.XPATH, value="/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[5]")
             print("Nationalities is visible")
         except NoSuchElementException:
             print("Nationalities is not visible")
 
+        #check the Visibility of Corporate Branding
+        
         try:
             self.driver.find_element(by=By.XPATH, value="/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[6]")
             print("Corporate branding is visible")
         except NoSuchElementException:
             print("Corporate branding is not visible")
 
+        #check the Visibility of Configuration
+        
         try:
             self.driver.find_element(by=By.XPATH, value="/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]")
             print("Configuration is visible")
