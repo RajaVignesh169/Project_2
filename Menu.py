@@ -47,7 +47,7 @@ class Raja:
         try:
             self.driver.find_element(by=By.XPATH,
                                      value='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a').click()
-            print('Leave is Not Visible')
+            print('Leave is Visible')
         except NoSuchElementException:
             print('Leave is Not Visible')
 
